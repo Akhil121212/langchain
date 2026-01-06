@@ -1,0 +1,46 @@
+#Langchain = Is a framework for developing applicaions powered by LLMs
+
+# Langchain simpilifies every stage of the LLM lifecycle:
+
+#what is langchain??
+  1) A developer way to get into AI  ex: interview with chatgpt 
+  2) Give context to AI
+  3) Use multi LLM in your Apps 
+# ex: start with PDF summarizer
+
+#problem:
+   # every request --> question + Docs
+   # High token --> More Bill $$
+
+#solution:
+#   take text --> Break into chnuk
+#   summarize each chunk
+#   find the must relative chunk to question
+#   send chunk +  question to LLM (chatgpt,etc....)
+
+#                   --->>> Embedding
+#     text --> enbedding Algo --> embedding
+#     embedding --> [0.8,0.72,0.3....]  array btw -1 & 1
+
+#     each number is a score on relevancy scale
+#  ex : is the text about youtube?
+#       is it about coding?
+#       is it about AI?
+#       contains history....
+#   problem --> Where to store these embeddings?
+#       vector store (database for embeddings)
+#        calculation on embeddingss
+
+#   Flow:
+#        -> take question & convert to embedding
+#        -> find most relative embedding in DB
+#        -> question + relative chunk -> chatgpt
+
+# Landchain gives us tools to handle all of this in an easier way with multiple languages such as python or js
+# ex: Get discord chat 
+
+# Vector Databases 
+#   PG vector
+#   Pine cone ,chroma....
+
+  Longchain even provides a wrapper for most popular databases for interact with them.
